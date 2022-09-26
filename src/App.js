@@ -1,5 +1,6 @@
 
 import './App.css';
+import Controller from './components/Controller';
 import TrackList from './components/TrackList';
 import { MusicPlayerProvider } from "./contexts/MusicPlayerContext";
 
