@@ -1,13 +1,10 @@
 import React from "react";
 import useMusicPlayer from "../hooks/usePlayerProvider";
 
-const { trackList, currentTrackName, playTrack, isPlaying } =
-    useMusicPlayer();
 
 const TrackList = () => {
     const { trackList, currentTrackName, playTrack, isPlaying } =
         useMusicPlayer();
-
     return (
         <>
             {trackList.map((track, index) => (
