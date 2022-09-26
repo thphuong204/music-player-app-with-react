@@ -1,11 +1,16 @@
 
 import './App.css';
+import TrackList from './components/TrackList';
+import { MusicPlayerProvider } from "./contexts/MusicPlayerContext";
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <MusicPlayerProvider>
+      <div className="container">
+        <TrackList />
+        <Controller />
+      </div>
+    </MusicPlayerProvider>
   );
 }
 
