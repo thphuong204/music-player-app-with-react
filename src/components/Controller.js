@@ -4,6 +4,7 @@ import SkipNextIcon from '@mui/icons-material/SkipNext';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import PauseIcon from '@mui/icons-material/Pause';
+import './../App.css';
 
 function Controller() {
   const {
@@ -31,22 +32,25 @@ function Controller() {
   };
 
   return (
-    <div className="controller">
-      <button onClick={handlePlayPreviousTrack}>
-        <SkipPreviousIcon/>
-      </button>
+    <div className="controller" >
+      <div className="controller_button">
+        <button  onClick={handlePlayPreviousTrack}>
+          <SkipPreviousIcon className="prevNext-button"/>
+        </button>
 
-      <button onClick={handleTogglePlay}>
-          {isPlaying ? (
-            <PauseIcon/>
-          ) : (
-            <PlayCircleIcon/>
-          )}
-      </button>
+        <button  onClick={handleTogglePlay} >
 
-      <button onClick={handlePlayNextTrack}>
-      <SkipNextIcon/>
-      </button>
+            {isPlaying ? (
+              <PauseIcon className="play-button"/>
+            ) : (
+              <PlayCircleIcon className="play-button"/>
+            )}
+        </button>
+
+        <button  onClick={handlePlayNextTrack}>
+        <SkipNextIcon className="prevNext-button"/>
+        </button>
+      </div>
     </div>
   );
 }
