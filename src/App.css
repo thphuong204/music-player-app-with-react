@@ -21,10 +21,12 @@ margin: 20px;
   min-height:80px;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-top-right-radius:50px;
   border-top-left-radius:50px;
   background-color: lemonchiffon;
   font-size:20px;
+  overflow: hidden;
 }
 
 .tracks-list{
@@ -106,5 +108,5 @@ margin: 20px;
 
  @keyframes marquee {
   0%   { transform: translateX(100%); }
-  100% { transform: translateX(0); color:lemonchiffon}
+  100% { transform: translateX(-200%); }
 }
