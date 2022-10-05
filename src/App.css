@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+
+
+.container {
+margin: 20px;
+ display: flex ;
+ justify-content:center;
+ align-items: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+    width:20%;
+    min-width:300px;
+    border-radius:50px;
+    border:1px solid lemonchiffon;  
+    margin: 20px;
+    box-shadow:  5px 5px 20px 20px lightblue inset !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.currentSong{
+  min-height:80px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-top-right-radius:50px;
+  border-top-left-radius:50px;
+  background-color: lemonchiffon;
+  font-size:20px;
 }
 
-.App-link {
-  color: #61dafb;
+.tracks-list{
+  min-height:300px;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: moccasin;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.song-title-group{
+  width:100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
+
+.song-title{
+  width: 80%;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px;
+  background-color: aliceblue;
+  margin: 10px 0;
+}
+
+.controller{
+  min-height:100px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: lemonchiffon;
+  border-bottom-right-radius:50px;
+  border-bottom-left-radius:50px;
+}
+
+.controller:hover {
+  background-color: lemonchiffon;
+}
+
+.controller_button{
+  display: flex;
+  align-items: center;
+}
+
+.controller_button  button{
+  margin: 0 5px;
+  background-color: lemonchiffon;
+  border: none;
+}
+
+.prevNext-button{
+  width:40px !important; 
+  height:40px !important;
+}
+
+ .play-button{
+  width:60px !important; 
+  height:60px !important;
+ }
+
+ .listen-icon{
+  margin: 0 10px;
+ }
+
+ .song{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+ }
