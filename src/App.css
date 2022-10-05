@@ -21,7 +21,6 @@ margin: 20px;
   min-height:80px;
   display: flex;
   align-items: center;
-  justify-content: center;
   border-top-right-radius:50px;
   border-top-left-radius:50px;
   background-color: lemonchiffon;
@@ -100,3 +99,12 @@ margin: 20px;
   overflow: hidden;
   text-overflow: ellipsis
  }
+
+ .marquee-property {
+  animation: marquee 5s linear infinite;
+ }
+
+ @keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(0); color:lemonchiffon}
+}

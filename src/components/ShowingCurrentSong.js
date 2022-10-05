@@ -8,7 +8,7 @@ function ShowingCurrentSong() {
 
   return (
     <Box className="currentSong">
-      <marquee>{currentTrackName}</marquee>
+      <div className="marquee-property">{currentTrackName}</div>
       </Box>
     
   )
